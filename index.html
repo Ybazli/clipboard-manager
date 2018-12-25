@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body >
+    <div class="container" id="app">
+        <section class="hero is-primary">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                  {{ title }}
+                </h1>
+                <h2 class="subtitle">
+                  History: <span class="badge">{{ history.length }}</span>
+                </h2>
+              </div>
+            </div>
+          </section>
+      
+          <nav class="panel">
+      
+            <a class="panel-block is-active item" v-for="item in history">
+              <span class="panel-icon">
+              </span>
+              {{ item }}
+            </a>
+      
+          </nav>
+    </div>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
