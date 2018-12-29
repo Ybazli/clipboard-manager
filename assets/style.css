@@ -1,3 +1,19 @@
 .item{
-    padding:2em !important;
+    padding:1em !important;
+}
+
+pre{
+    background-color: inherit;
+    padding: 0;
+
+}
+
+.date{
+    font-style: italic;
+    font-size: 11px;
+    position: absolute;
+    text-align: right;
+    right: 5px;
+    bottom: 0;
+    color: darkgray
 }

@@ -8,7 +8,7 @@ let tray = null
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 300, height: 800 , frame: false
+    width: 400, height: 800 , frame: false
   })
   mainWindow.hide();
   tray = new Tray('./icon/icon.png')

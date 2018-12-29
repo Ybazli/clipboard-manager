@@ -23,10 +23,13 @@
       
           <nav class="panel">
       
-            <a class="panel-block is-active item" v-for="item in history">
+            <a class="panel-block is-active item" v-for="(item , index) in history" @click="doCopy(index)">
               <span class="panel-icon">
               </span>
-              {{ item }}
+                <pre>
+                  {{ '\n' + item }}
+                </pre>
+                <span class="date">24 minute ago</span>
             </a>
       
           </nav>

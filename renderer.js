@@ -7,6 +7,7 @@ const App = new Vue({
         title: 'Clipboard Manger',
         history : [],
     },
+    
     mounted(){
         setInterval(this.checkClipboard , 500);
     },
@@ -17,6 +18,12 @@ const App = new Vue({
                 this.history.push(text);
                 this.history.reverse();
             }
+        },
+        doCopy(index){
+
+            let item = this.history[index];
+            clipboard.writeText(item);
+
         }
     }
 
